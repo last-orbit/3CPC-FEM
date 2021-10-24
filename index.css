@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    font-size: 15px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0, 95%);
+    min-height: 100vh;
+}
+
+.container{
+    width: 915px;
+    margin: 0 auto;
+    display: flex;
+    height: 560px;
+    border-radius: 15px; 
+}
+
+.container img {
+    padding:  50px 0 0 45px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 305px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    width: 305px;
+}
+
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 305px;
+}
+
+
+.title {
+    color:#f2f2f2;
+    font-size: 40px;
+    font-family: 'big shoulders display';
+    margin-top: 25px;
+    padding: 0 0 0 50px;
+}
+
+.text-content {
+    padding: 0 0 0 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 210px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0 0 50px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans p.button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs p.button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury p.button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen and (max-width: 425px) {
+    body{
+        display: flex;
+        margin: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .sedans{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury{
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0px;
+    }
+
+    .text-content{
+        width: 225px;
+    }
+
+    .button{
+        margin: 0 0 45px 50px;
+    }
+}
